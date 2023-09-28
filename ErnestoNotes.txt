@@ -1,0 +1,18 @@
+cd -> Change Directory
+dir -> Listing Directory
+cd .. -> Go to parent directory
+mkdir -> Makes a directory
+
+Git
+*have to be in a git progject for it to work
+git status - > shows you the state of git
+git branch -> Shows you all branches
+git branch -D (Branch name) -> Delete Branch name
+git checkout -b (Branch name) -> Create a new branch with given name on local machine
+git checkout (Branch name) -> Switch to version of code on branch
+git add (file name) -> marks the changes in the file to be part of the commit
+git commit -m "(Descriptive name)" -> Packages of the changes marked for commit in a committed name
+git push -> Pushes local commit to the internet.
+git pull -> Pulls changes from internet to CURRENT branch
+git push -u origin (branch name) -> used the first time you create a new branch and needed to push to the internet.
+
