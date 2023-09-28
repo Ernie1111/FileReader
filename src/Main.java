@@ -5,21 +5,13 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
+        Scanner consoleInput = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Please enter the path of the folder you would like to scan for content counting.");
+        String rootFilePath = consoleInput.nextLine();  // Read user input
 
+        FileSystemCrawler myFileSystemCrawler = new FileSystemCrawler(rootFilePath);
+        myFileSystemCrawler.crawlFileSystem();
 
-//Opens up file
-        File filePath = new File("C:\\Users\\Dev\\Developer");
-//Reading what is in the file
-        File[] listFiles = filePath.listFiles();
-//Prints the names of files
-        System.out.println("File Names: ");
-        for (int i = 0; i < listFiles.length; i++){
-            if(listFiles[i].isFile()){
-                System.out.println(listFiles[i].getName());
-            }
-        }
-
-
-
+        System.out.println("All Done!");
     }
 }
